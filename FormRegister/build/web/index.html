@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container{
+                width: 30%; /*<!-- div with 40% width -->*/
+                border: 1px solid black; 
+                margin: auto;
+                padding: 20px;
+                font-size: 20px;
+            }
+            #myform table td tr input{
+                font-size: 20px; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>  My form  </h1>
+            <form id="myform" action="RegisterServlets" method="post" >
+<!--                /*action is used in xml url mapping to open next page */-->
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td>   <input type="text" autocomplete="on" name="username" placeholder="enter name"  >
+                            
+                             </td>
+<!--                        name is used for knowing the the value of input type -->
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                      <td><input type="password" name="user_password" placeholder="enter password"></td>
+                    </tr>   
+                        
+                     <tr>
+                        <td>Enter you mail:</td>
+                      <td><input type="email" name="user_email" placeholder="enter email"></td>
+                    </tr>  
+                    <tr>
+                        <td>Select Gender</td>
+                        <td><input type="radio" name="user_gender" value="male" >Male &nbsp;&nbsp; <input type="radio" name="user_gender" value="female">Female</<td>
+                    </tr>
+                        
+                    <tr>
+                        <td>Select your course:</td>
+                        <td>
+                    <select name="user_course">
+                        
+                        <option value="java">Java</option>
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                        <option value="php">Php</option>
+                        <option value="javascript">JavaScript</option>
+                  
+                    
+                    </select>  
+                      </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Ageee terms and condition</td>
+                        <td style="text-align:left"><input type="checkbox" value="checked" name="condition"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                        </td> 
+                        <td>
+                            <button type="submit" > Register</button>
+                            <button type="reset" >Reset</button>
+                        </td> 
+                        
+                    </tr>
+                    
+                    
+                </table>
+                <br>
+<!--                Mobile:<input type="tel" name="usermobile"><br>
+                DOB:<input type="date" name="dob"><br>
+                Language:---------------------------<br>
+                hindi<input type="checkbox" name="lang">
+                english<input type="checkbox" name="lang">
+                bengali<input type="checkbox" name="lang">     <br>           
+                 FileUpload:<input type="file" name="user_file">
+                 <input type="submit" name="SUBMIT">
+                 person:<input  type="number" min="1" max="5" name="personcount"> <br> comment 
+                 range:<input type="range"  min="1" max="50" name="user_range">  
+                 search:<input  type="search" name="Search">
+                 
+                 <input type="button" value="ClickMe">
+                 <input type="reset" value="RESET">
+                 <input type="image" src="Myphoto.png">
+                 
+            below is the label implementation
+            Gender:
+            <label for="Male">Male</label><input type="radio" name="gender" id="Male">
+             <label for="Female">Female</label><input type="radio" name="gender" id="Female">
+            -->
+            
+            
+            
+            
+            
+            </form>
+            
+            
+            
+            
+        </div>
+    </body>
+</html>
